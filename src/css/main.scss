@@ -1,0 +1,64 @@
+/*
+Title: SlashCSS
+Version: 0.1.0
+Updated: 2018-08-23
+Author: Jin Su Park
+Site: slashcss.com
+*/
+
+/************************************************************
+1. DEFAULT VARIABLES
+************************************************************/
+
+@import "build.variables";
+@import "../fonts/system.font";
+// these are your fonts or SCSS build variables
+// include SCSS overrides before the build variables
+
+/************************************************************
+2. COMPONENTS
+************************************************************/
+
+@import "components/import.components";
+// include custom components here
+
+/************************************************************
+2. ROOT VARIABLES
+************************************************************/
+
+// override component CSS variables here
+
+/************************************************************
+3. THIRD PARTY
+************************************************************/
+
+@import "../vendors/prism/prism.scss";
+// include any other 3rd party css libraries here
+
+/************************************************************
+4. CUSTOM CSS
+************************************************************/
+
+// this is where you can write your own CSS
+
+.markup {
+  &\:doc {
+    h3 {
+      position: relative;
+      margin-left: 30px;
+      @media (min-width: $sm) {
+        margin-left: 0;
+      }
+      &:before {
+        content: "#";
+        color: var(--green);
+        position: absolute;
+        left: -1em;
+        margin-top: 0em;
+        font-size: 1.2em;
+        line-height: 1;
+        font-weight: 700;
+      }
+    }
+  }
+}

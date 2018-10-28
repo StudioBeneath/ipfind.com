@@ -1,0 +1,64 @@
+/************************************************************
+WRAP
+************************************************************/
+
+:root {
+  --wrap-width: 1600px;
+}
+
+.#{$prefix}wrap {
+
+  position: relative;
+  width: 100%;
+  max-width: var(--wrap-width);
+  margin: auto;
+  padding-left: var(--u4);
+  padding-right: var(--u4);
+
+  @media (min-width: $sm) {
+    padding-left: var(--u8);
+    padding-right: var(--u8);
+  }
+  @media (min-width: $md) {
+    padding-left: var(--u10);
+    padding-right: var(--u10);
+  }
+  @media (min-width: $lg) {
+    padding-left: var(--u12);
+    padding-right: var(--u12);
+  }
+
+  /******************************
+  FLUSH
+  ******************************/
+
+  &\:flush {
+    padding: 0;
+  }
+  @each $key, $value in $screens {
+    &\@#{$key} {
+      @media (min-width: $value) {
+        &\:flush {
+          padding: 0;
+        }
+        &\:unflush {
+          padding-left: var(--u4);
+          padding-right: var(--u4);
+
+          @media (min-width: $sm) {
+            padding-left: var(--u8);
+            padding-right: var(--u8);
+          }
+          @media (min-width: $md) {
+            padding-left: var(--u10);
+            padding-right: var(--u10);
+          }
+          @media (min-width: $lg) {
+            padding-left: var(--u12);
+            padding-right: var(--u12);
+          }
+        }
+      }
+    }
+  }
+}
