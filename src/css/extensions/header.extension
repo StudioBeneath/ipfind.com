@@ -1,0 +1,24 @@
+/************************************************************
+HEADER
+************************************************************/
+
+.header {
+  display: flex;
+  &\:home {
+    justify-content: space-between;
+    padding-top: var(--u10);
+    .header\/content {
+      display: flex;
+      align-items: center;
+    }
+    .header\/item {
+      padding-right: var(--u4);
+    }
+    &:last-child {
+      .header\/item {
+        padding-right: 0;
+        padding-left: var(--u4);
+      }
+    }
+  }
+}

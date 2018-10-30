@@ -45,7 +45,7 @@ Buttons can vary in width.
   <button class="button">Default</button><br>
   <button class="button button-grow:u3 button-color:white button-style:elevate">U3</button><br>
   <button class="button button-grow:u6 button-color:white button-style:elevate">U6</button><br>
-  <button class="button button-grow:u9 button-color:white button-style:elevate">U9</button><br>
+  <button class="button button-grow:u10 button-color:white button-style:elevate">U9</button><br>
   <button class="button button-grow:u12 button-color:white button-style:elevate">U12</button><br>
   <button class="button button-grow:u15 button-color:white button-style:elevate">U15</button><br>
   <button class="button width:100% button-color:white button-style:elevate">Fluid</button>
@@ -55,7 +55,7 @@ Buttons can vary in width.
 <button class="button">Default</button>
 <button class="button button-grow:u3">U3</button>
 <button class="button button-grow:u6">U6</button>
-<button class="button button-grow:u9">U9</button>
+<button class="button button-grow:u10">U9</button>
 <button class="button button-grow:u12">U12</button>
 <button class="button button-grow:u15">U15</button>
 <button class="button width:100%">Fluid</button>

@@ -1,42 +1,48 @@
 /*
-Title: SlashCSS
+Title: ipfind
 Version: 0.1.0
 Updated: 2018-08-23
 Author: Jin Su Park
-Site: slashcss.com
+Site: ipfind.com
 */
 
 /************************************************************
-1. DEFAULT VARIABLES
+1. FONTS & BUILD VARIABLES
 ************************************************************/
 
+// include SCSS overrides before the build variables
 @import "build.variables";
 @import "../fonts/system.font";
-// these are your fonts or SCSS build variables
-// include SCSS overrides before the build variables
 
 /************************************************************
 2. COMPONENTS
 ************************************************************/
 
-@import "components/import.components";
 // include custom components here
+@import "components/import.components";
 
 /************************************************************
-2. ROOT VARIABLES
+3. ROOT VARIABLES
 ************************************************************/
 
 // override component CSS variables here
 
 /************************************************************
-3. THIRD PARTY
+4. THIRD PARTY
 ************************************************************/
 
+// include any other 3rd party css libraries here
 @import "../vendors/prism/prism.scss";
+
+/************************************************************
+5. EXTENSIONS
+************************************************************/
+
+@import "extensions/header.extension";
 // include any other 3rd party css libraries here
 
 /************************************************************
-4. CUSTOM CSS
+6. CUSTOM CSS
 ************************************************************/
 
 // this is where you can write your own CSS
