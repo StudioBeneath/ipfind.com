@@ -4,14 +4,14 @@
 	font-family: 'FF Mark Web';
 	font-style: normal;
 	font-weight: 400;
-	src: url('MarkPro-Book.woff') format('woff'),
-       url('MarkPro-Book.ttf') format('truetype');
+	src: url('../fonts/MarkPro-Book.woff') format('woff'),
+       url('../fonts/MarkPro-Book.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'FF Mark Web';
 	font-style: normal;
 	font-weight: 700;
-	src: url('MarkPro-bold.woff') format('woff'),
-       url('MarkPro-bold.ttf') format('truetype');
+	src: url('../fonts/MarkPro-Bold.woff') format('woff'),
+       url('../fonts/MarkPro-Bold.ttf') format('truetype');
 }

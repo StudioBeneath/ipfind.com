@@ -11,8 +11,9 @@ Site: ipfind.com
 ************************************************************/
 
 // include SCSS overrides before the build variables
+@import "../fonts/mark.font";
+@import "override.variables";
 @import "build.variables";
-@import "../fonts/system.font";
 
 /************************************************************
 2. COMPONENTS
