@@ -12,13 +12,12 @@ HEADER
       align-items: center;
     }
     .header\/item {
-      padding-right: var(--u4);
-    }
-    &:last-child {
-      .header\/item {
+      padding-right: var(--u10);
+      &:last-child {
         padding-right: 0;
         padding-left: var(--u4);
       }
     }
+
   }
 }

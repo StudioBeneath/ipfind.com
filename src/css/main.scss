@@ -27,6 +27,9 @@ Site: ipfind.com
 ************************************************************/
 
 // override component CSS variables here
+:root {
+  --wrap-width: 1400px;
+}
 
 /************************************************************
 4. THIRD PARTY
@@ -40,6 +43,7 @@ Site: ipfind.com
 ************************************************************/
 
 @import "extensions/header.extension";
+@import "extensions/home.extension";
 // include any other 3rd party css libraries here
 
 /************************************************************

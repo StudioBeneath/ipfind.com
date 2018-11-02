@@ -5,7 +5,7 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url('../fonts/MarkPro-Book.woff') format('woff'),
-       url('../fonts/MarkPro-Book.ttf') format('truetype');
+			 url('../fonts/MarkPro-Book.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,5 +13,5 @@
 	font-style: normal;
 	font-weight: 700;
 	src: url('../fonts/MarkPro-Bold.woff') format('woff'),
-       url('../fonts/MarkPro-Bold.ttf') format('truetype');
+			 url('../fonts/MarkPro-Bold.woff2') format('woff2');
 }
