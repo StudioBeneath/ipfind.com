@@ -28,9 +28,7 @@ $button-widths: 5 !default;
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   line-height: 1;
-  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
   white-space: nowrap;
   transition: var(--transition);
@@ -153,6 +151,7 @@ $button-widths: 5 !default;
               }
               &:active {
                 background: var(--white);
+                color: var(--black);
               }
             } @else if $key == black {
               background: transparent;
@@ -164,17 +163,20 @@ $button-widths: 5 !default;
               }
               &:active {
                 background: var(--black);
+                color: var(--white);
               }
             } @else {
               background: transparent;
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
               color: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1);
+                background: var(--#{$key});
                 color: var(--white);
               }
               &:active {
-                background: var(--#{$key});
+                background: var(--#{$key}-d1);
+                box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key}-d1);
+                color: var(--white);
               }
             }
           }
@@ -341,11 +343,11 @@ BUTTON(S)
               box-shadow: inset 0px 0px 0px var(--button-outline-weight) var(--#{$key});
               color: var(--#{$key});
               &:hover {
-                background: var(--#{$key}-l1);
+                background: var(--#{$key});
                 color: var(--white);
               }
               &:active {
-                background: var(--#{$key});
+                background: var(--#{$key}-d1);
               }
             }
           }

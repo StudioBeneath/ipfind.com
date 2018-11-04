@@ -23,7 +23,8 @@ gulp.task('css', function () {
   var plugins = [
     // cssnext({ browsers: ["last 2 versions"] }),
     mqpacker(),
-    cssnano({ autoprefixer: false })
+    cssnano({ autoprefixer: false,
+              reduceIdents: false })
   ];
   return gulp.src('css/main.scss')
     .pipe(sass().on('error', sass.logError))

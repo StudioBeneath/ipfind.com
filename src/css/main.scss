@@ -30,6 +30,13 @@ Site: ipfind.com
 :root {
   --wrap-width: 1400px;
 }
+:root {
+  --button-outline-weight: 2px;
+  --button-radius: 5px;
+  --button-font-family: var(--font-family);
+  --button-font-size: var(--micro);
+  --button-font-weight: var(--medium);
+}
 
 /************************************************************
 4. THIRD PARTY
@@ -51,6 +58,51 @@ Site: ipfind.com
 ************************************************************/
 
 // this is where you can write your own CSS
+
+body {
+  overflow-x: hidden;
+}
+
+.button {
+  text-transform: none;
+  &\:social {
+    position: relative;
+    img {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+    }
+  }
+  &\:tab {
+    color:black;
+    background: transparent;
+    &:hover {
+      background: var(--blue-l4);
+    }
+    &.is-active {
+      background: var(--blue-l4);
+    }
+  }
+}
+
+.line {
+  &\:seperator {
+    position: relative;
+    span {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 0px 15px 1px 15px;
+      transform: translateX(-50%) translateY(-50%);
+      background: white;
+    }
+  }
+}
+
+
 
 .markup {
   &\:doc {

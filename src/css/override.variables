@@ -73,7 +73,7 @@ $colors: (
   pink: #FF276C,
   violet: #D727FF,
   purple: #8D27FF,
-  navy: #4A27FF,
+  navy: #162C5B,
   blue: #278AFF,
   teal: #00DEB1,
   green: #00B26B,
@@ -83,7 +83,7 @@ $colors: (
   brown: #A83C00,
   grey: #5c789c,
 
-  primary: #0036d0,
+  primary: #0050FF,
   secondary: #ff5600,
   tertiary: #ffdd24
 ) !default;

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5000px" height="5000px" viewBox="0 0 5000 5000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="25.998125%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0096FF" offset="0%"></stop>
+            <stop stop-color="#0300FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="40%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="40%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M-1.8189894e-12,-4.54747351e-13 L5000,-4.54747351e-13 L5000,4800 C5000,4910.45695 4910.45695,5000 4800,5000 L-1.8189894e-12,5000 L-1.8189894e-12,-4.54747351e-13 Z" id="path-4"></path>
+    </defs>
+    <g id="ipFindco" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.774832589">
+        <g id="Rectangle" transform="translate(2500.000000, 2500.000000) rotate(-360.000000) translate(-2500.000000, -2500.000000) ">
+            <use fill="url(#linearGradient-1)" xlink:href="#path-4"></use>
+            <use fill="url(#linearGradient-2)" xlink:href="#path-4"></use>
+            <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+        </g>
+    </g>
+</svg>

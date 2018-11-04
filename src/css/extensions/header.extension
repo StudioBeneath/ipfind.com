@@ -4,6 +4,8 @@ HEADER
 
 .header {
   display: flex;
+  position: relative;
+  z-index:10;
   &\:home {
     justify-content: space-between;
     padding-top: var(--u10);
@@ -12,10 +14,9 @@ HEADER
       align-items: center;
     }
     .header\/item {
-      padding-right: var(--u10);
+      padding-right: var(--u8);
       &:last-child {
         padding-right: 0;
-        padding-left: var(--u4);
       }
     }
 
