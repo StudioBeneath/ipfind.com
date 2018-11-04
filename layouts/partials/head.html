@@ -11,7 +11,7 @@
     gtag('config', 'UA-124728663-1');
   </script>
 
-  <title>SlashCSS | {{ .Title }}</title>
+  <title>ipfind | {{ .Title }}</title>
   <!-- Page Meta -->
   <meta charset="utf-8" />
   <meta name="description" content="A clear and efficient CSS framework for consistent UI, designed to enhance your design and development workflow.">
@@ -46,4 +46,4 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" async defer>
 </head>
-<body>
+<body class="{{ if .Params.body_class }}{{ .Params.body_class }}{{ else }}{{ end }}">

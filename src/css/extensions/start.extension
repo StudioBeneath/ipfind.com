@@ -3,10 +3,9 @@ START
 ************************************************************/
 
 .start {
-  width: 100%;
-  height: 100%;
-  background: var(--primary);
   padding-top: 10vh;
+  padding-bottom: 10vh;
+  background: var(--primary);
   &\/logo {
     width: 180px;
     margin: auto;
