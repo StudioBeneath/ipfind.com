@@ -3,9 +3,22 @@
 <header>
   <div class="wrap">
     <nav class="header header:home">
-    	<div class="header/content">
+      <div class="header/content header/content:mobile display:flex display@sm:none">
     		<div class="header/item">
-          <a href="/" class="hover-fill:none padding-x:u4 padding-x@sm:u4 padding-y:u4">
+          <a href="/" class="hover-fill:none">
+      			<img src="/assets/images/logo-ol.svg" class="header/logo">
+      		</a>
+        </div>
+        <div class="header/item">
+          <a href="#" class="header/hamburger padding-right:u2 js-hamburger">
+      			<i class="fas fa-bars font-size:h3 color:primary"></i>
+      		</a>
+        </div>
+    	</div>
+
+    	<div class="header/content display:none display@sm:flex">
+    		<div class="header/item">
+          <a href="/" class="hover-fill:none">
       			<img src="/assets/images/logo-ol.svg" class="header/logo">
       		</a>
         </div>
@@ -31,7 +44,7 @@
         </div>
     	</div>
 
-    	<div class="header/content">
+    	<div class="header/content display:none display@sm:flex">
     		<div class="header/item">
           <a href="/signup/" class="color:black font-weight:bold">
       			Sign Up
@@ -48,9 +61,9 @@
 </header>
 
 
-<section class="margin-bottom:u12 pricing-bg padding-top:10vh">
+<section class="margin-bottom:u12 pricing-bg padding-top:8vh">
   <div class="wrap">
-    <div class="row row-gutter:u10">
+    <div class="row row-gutter@sm:u10">
         <div class="column:12 column@sm:7">
           <h1 class="font-size:h2 font-height:1 margin-bottom:u8">From getting started to millions of users, we have a plan for you</h1>
           <h5 class="font-weight:regular">
@@ -64,8 +77,8 @@
 <section class="padding-bottom:10vh">
   <div class="wrap">
 
-    <div class="row row-gutter:u8 padding-y:10vh">
-      <div class="column:12 column@sm:3">
+    <div class="row row-gutter@sm:u8 padding-y:10vh">
+      <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
         <img src="https://via.placeholder.com/150" class="media media-size:lg border-radius:round margin-bottom:u6">
         <h6 class="margin-bottom:u2">Developers</h6>
         <h2 class="margin-bottom:u6">Free</h2>
@@ -75,7 +88,7 @@
         </p>
       </div>
 
-      <div class="column:12 column@sm:3">
+      <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
         <img src="https://via.placeholder.com/150" class="media media-size:lg border-radius:round margin-bottom:u6">
         <h6 class="margin-bottom:u2">Basic</h6>
         <h2 class="margin-bottom:u6">$10<span class="font-weight:regular font-size:h5">/month</span></h2>
@@ -86,7 +99,7 @@
         </p>
       </div>
 
-      <div class="column:12 column@sm:3">
+      <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
         <img src="https://via.placeholder.com/150" class="media media-size:lg border-radius:round margin-bottom:u6">
         <h6 class="margin-bottom:u2">Professional</h6>
         <h2 class="margin-bottom:u6">$50<span class="font-weight:regular font-size:h5">/month</span></h2>
@@ -97,7 +110,7 @@
         </p>
       </div>
 
-      <div class="column:12 column@sm:3">
+      <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
         <img src="https://via.placeholder.com/150" class="media media-size:lg border-radius:round margin-bottom:u6">
         <h6 class="margin-bottom:u2">Enterprise</h6>
         <h2 class="margin-bottom:u6">$150<span class="font-weight:regular font-size:h5">/month</span></h2>
@@ -111,7 +124,7 @@
     </div>
 
     <div class="card elevate fill:navy-d1 margin-bottom:u12">
-      <div class="card/content align:center padding:u10">
+      <div class="card/content align:center  padding:u8 padding@sm:u10">
         <h4 class="margin-bottom:u6 color:white">
           Need an unlimited plan?
         </h4>
@@ -122,7 +135,7 @@
 
     <h2 class="align:center margin-bottom:u12">Frequently Asked Questions</h2>
 
-    <div class="row row-gutter:u10">
+    <div class="row row-gutter@sm:u10">
       <div class="column:12 column@sm:6">
         <article class="margin-bottom:u10">
           <h6 class="margin-bottom:u4">How do I figure out what plan I should be on?</h6>
