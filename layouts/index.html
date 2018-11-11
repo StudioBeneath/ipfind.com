@@ -1,4 +1,6 @@
 {{ partial "head" . }}
+<main class="width:100% overflow:hidden">
+
 
 <header>
   <div class="wrap">
@@ -80,7 +82,7 @@
         </div>
         <div class="column:12 column@sm:6 column@md:5">
           <div class="card max-width:600px margin:auto elevate">
-            <div class="card/content padding:u8 padding-bottom:u6">
+            <div class="card/content padding:u6 padding@sm:u8 padding-bottom:u6">
               <h4 class="align:center margin-bottom:u8">Lookup IP addresses in <br>seconds, <span class="color:primary">get started now</span></h4>
               <form class="form">
                 <div class="form/item margin-bottom:u2">
@@ -99,7 +101,7 @@
               <span class="line line:seperator"><span>or</span></span>
             </div>
 
-            <div class="card/content padding:u8 padding-top:u6">
+            <div class="card/content padding:u6 padding@sm:u8 padding-top:u6">
               <button type="submit" value="Sign Up" class="button button:social button-color:white width:100% font-size:body elevate"><img src="/assets/images/icons/icon-google.svg">Sign Up with Google</button>
 
               <p class="align:center font-size:tiny max-width:300px margin-top:u6 margin:auto">By signing up, you agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
@@ -128,7 +130,7 @@
 
         <div class="card elevate">
           <form class="form">
-            <div class="row elevate border-radius">
+            <div class="row elevate border-radius flex-wrap:nowrap">
               <div class="column">
                 <input type="text" placeholder="111.194.24.21" class="border:none  input-size:xl align:center">
               </div>
@@ -163,14 +165,14 @@
 
 <section class="margin-bottom:10vh">
   <div class="wrap">
-    <div class="row row-gutter:u8 padding-y:10vh">
-      <div class="column:12 column@sm:4">
+    <div class="row row-gutter@sm:u8 padding-y:10vh">
+      <div class="column:12 column@sm:4 margin-bottom:u10 margin-botto@sm:u0">
         <img src="https://via.placeholder.com/150" class="media media-size:lg border-radius:round margin-bottom:u6">
         <h4 class="margin-bottom:u6">Lookup IP addresses in <br>seconds, <span class="color:primary">get started now</span></h4>
         <p>Our database is the best in the business and is updated every week to make sure the results are as accurate as possible.</p>
       </div>
 
-      <div class="column:12 column@sm:4">
+      <div class="column:12 column@sm:4 margin-bottom:u10 margin-botto@sm:u0">
         <img src="https://via.placeholder.com/150" class="media media-size:lg border-radius:round margin-bottom:u6">
         <h4 class="margin-bottom:u6">Lookup IP addresses in <br>seconds, <span class="color:primary">get started now</span></h4>
         <p>Our database is the best in the business and is updated every week to make sure the results are as accurate as possible.</p>
@@ -186,7 +188,7 @@
     </div>
 
     <div class="card elevate fill:blue-d1">
-      <div class="card/content align:center padding:u10">
+      <div class="card/content align:center padding:u8 padding@sm:u10">
         <h4 class="margin-bottom:u6 color:white">
           Need an unlimited plan?
         </h4>
@@ -197,7 +199,7 @@
   </div>
 </section>
 
-<section class="home-sdk fill:blue-l5 padding-top:10vh">
+<section class="home-sdk fill:blue-l5 padding-top:10vh padding-bottom:10vh padding-bottom@sm:u0">
   <div class="wrap">
     <h3 class="margin-bottom:u6 align:center">Lookup IP addresses in seconds, get started now</h3>
     <p class="max-width:600px font-size:h6 color:black margin:auto margin-bottom:u8 align:center">Our database is the best in the business and is updated every week to make sure the results are as accurate as possible.</p>
@@ -209,7 +211,7 @@
       <a href="#" class="button button:tab js-home-language-switch">NODE</a>
     </div>
 
-    <div class="card elevate max-width:800px margin:auto">
+    <div class="card elevate max-width:800px margin:auto margin-bottom:u10 margin-bottom@sm:u0">
       <div class="card/content padding:u8">
         // Require the Stripe library with a test secret key.
         const stripe = require('stripe')('sk_test_BQokikJOvBiI2HlWgH4olfQ2');
@@ -227,17 +229,17 @@
     </div>
 
     <div class="home-sdk/cta row row-gutter:u6">
-      <div class="column:12 column@sm:6">
+      <div class="column:12 column@sm:6 margin-bottom:u4 margin-bottom@sm:u0">
 
         <div class="card border:none elevate">
           <div class="row">
-            <div class="column:3 fill:navy-d4">
+            <div class="column:4 column@sm:3 fill:navy-d4">
               <div class="card/content">
 
               </div>
             </div>
-            <div class="column:9">
-              <div class="card/content padding:u8">
+            <div class="column:8 column@sm:9">
+              <div class="card/content padding:u6 padding@sm:u8">
                 <h5 class="margin-bottom:u6">Read the Docs</h5>
                 <p>Our database is the best in the business and is updated every week to make sure the results are as accurate as possible.</p>
               </div>
@@ -250,13 +252,13 @@
 
         <div class="card border:none elevate">
           <div class="row">
-            <div class="column:3 fill:blue">
+            <div class="column:4 column@sm:3 fill:blue">
               <div class="card/content">
 
               </div>
             </div>
-            <div class="column:9">
-              <div class="card/content padding:u8">
+            <div class="column:8 column@sm:9">
+              <div class="card/content padding:u6 padding@sm:u8">
                 <h5 class="margin-bottom:u6">Read the Docs</h5>
                 <p>Our database is the best in the business and is updated every week to make sure the results are as accurate as possible.</p>
               </div>
@@ -271,152 +273,13 @@
 </section>
 
 <section class="home-cta fill:navy padding-y:8vh align:center">
-  <div class="wrap padding-top:u12">
-    <h2 class="margin-bottom:u8 color:white max-width:500px margin:auto">Deploy your app in seconds, get started now</h2>
+  <div class="wrap padding-top@sm:u12">
+    <h3 class="font-size@sm:h2 margin-bottom:u8 color:white max-width:500px margin:auto">Deploy your app in seconds, get started now</h3>
     <a href="#" class="button button-grow:u12 font-size:body border-radius:round">Get Started</a>
   </div>
 </section>
+{{ partial "footer" . }}
+{{ partial "slidemenu" . }}
 
-<footer class="fill:white padding-top:u10 padding-bottom:u6">
-  <div class="wrap">
-    <div class="row">
-      <div class="column flex:none padding-right:u12">
-        <img src="/assets/images/logo-ol.svg" class="media">
-      </div>
-      <div class="column">
-
-        <div class="row margin-bottom:u14">
-          <div class="column flex:none padding-right:u10">
-            <ul class="list list-gutter:u2">
-              <li class="list/item">
-                <h6 class="font-size:micro font-case:upper margin-bottom:u6">Product</h6>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Features
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Pricing
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Docs
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Support
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="column flex:none padding-right:u10">
-            <ul class="list list-gutter:u2">
-              <li class="list/item">
-                <h6 class="font-size:micro font-case:upper margin-bottom:u6">Tools & Support</h6>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Bulk Search
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Contact Us
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul class="list list-gutter:u2">
-              <li class="list/item">
-                <h6 class="font-size:micro font-case:upper margin-bottom:u6">Resources</h6>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Terms of Agreement
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Privacy Policy
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Country Flag
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Map Image
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-      <div class="column flex:none">
-        <a href="#" class="card fill:blue-l5 border:none display:inline-flex">
-          <div class="card/content padding:u8">
-            <div class="flag flag-gutter:u6">
-              <div class="flag/item">
-                <img src="https://via.placeholder.com/150" class="media media-size:xl border-radius:round">
-              </div>
-              <div class="flag/item">
-                <h6 class="margin-bottom:u2">Try Our Bulk Search</h6>
-                <p class="color:black font-size:tiny">Built on a network of over 420 <br />million monthly users.</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="row border-top padding-top:u6">
-      <div class="column display:flex align-items:center">
-        <div>
-          <a href="#" class="font-size:tiny color:grey-l2 margin-right:u4">Copyright © IP Find 2018</a>
-          <a href="#" class="font-size:tiny color:grey-l2 margin-right:u4">Terms</a>
-          <a href="#" class="font-size:tiny color:grey-l2 ">Privacy</a>
-        </div>
-      </div>
-      <div class="column align:right">
-        <a href="#" class="font-size:h4 color:primary margin-right:u4"><i class="fab fa-github"></i></a>
-        <a href="#" class="font-size:h4 color:primary margin-right:u4"><i class="fab fa-medium"></i></a>
-        <a href="#" class="font-size:h4 color:primary "><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-
-  </div>
-</footer>
-
-
-
-<aside class="slidemenu slidemenu-direction:right">
-  <div class="slidemenu/overlay">
-
-  </div>
-  <div class="slidemenu/content padding:u4">
-    <div class="slidemenu/close">
-
-    </div>
-		<a href="/" class="hover-fill:none">
-      <img src="/assets/images/logo-ol.svg" class="slidemenu/logo">
-    </a>
-
-  </div>
-</aside>
-
-
+</main>
 {{ partial "foot" . }}

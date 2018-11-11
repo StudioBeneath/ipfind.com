@@ -3,9 +3,22 @@
 <header>
   <div class="wrap">
     <nav class="header header:home">
-    	<div class="header/content">
+      <div class="header/content header/content:mobile display:flex display@sm:none">
     		<div class="header/item">
-          <a href="/" class="hover-fill:none padding-x:u4 padding-x@sm:u4 padding-y:u4">
+          <a href="/" class="hover-fill:none">
+      			<img src="/assets/images/logo-od.svg" class="header/logo">
+      		</a>
+        </div>
+        <div class="header/item">
+          <a href="#" class="header/hamburger padding-right:u2 js-hamburger">
+      			<i class="fas fa-bars font-size:h3 color:white"></i>
+      		</a>
+        </div>
+    	</div>
+
+    	<div class="header/content display:none display@sm:flex">
+    		<div class="header/item">
+          <a href="/" class="hover-fill:none">
       			<img src="/assets/images/logo-od.svg" class="header/logo">
       		</a>
         </div>
@@ -31,7 +44,7 @@
         </div>
     	</div>
 
-    	<div class="header/content">
+    	<div class="header/content display:none display@sm:flex">
     		<div class="header/item">
           <a href="/signup/" class="color:white font-weight:bold">
       			Sign Up
@@ -50,14 +63,16 @@
 
 <section class="margin-bottom:u12 features-bg padding-top:10vh">
   <div class="wrap">
-    <div class="row row-gutter:u10">
-        <div class="column:12 column@sm:6">
-          <h1 class="font-size:hero font-height:1 margin-bottom:u8 color:white">The simplest <br />reverse lookup <br />for a location <br />using IP.</h1>
-          <h5 class="font-weight:regular color:white">
-            We make for fetching a location from an IP Address fast and simple. Fetch an end point with the IP and receive an instant JSON response with the location data you need.
-          </h5>
+    <div class="row row-gutter@sm:u10 margin-bottom:u12 margin-bottom@sm:u0">
+        <div class="column:12 column@sm:6 column@md:7 margin-bottom:u8 flex align-items:center">
+          <div>
+            <h1 class="font-size:h2 font-size@sm:h1 font-size@md:hero font-height:1 margin-bottom:u8 color:white">The simplest <br class="display:none display@sm" />reverse lookup <br class="display:none display@sm" />for a location <br class="display:none display@sm" />using IP.</h1>
+            <h5 class="font-weight:regular color:white">
+              We make for fetching a location from an IP Address fast and simple. Fetch an end point with the IP and receive an instant JSON response with the location data you need.
+            </h5>
+          </div>
         </div>
-        <div class="column:12 column@sm:6">
+        <div class="column:12 column@sm:6 column@md:5">
           <img src="https://via.placeholder.com/150/" class="media width:100%" />
         </div>
     </div>
@@ -68,12 +83,12 @@
   <div class="wrap">
 
 
-    <div class="row row-gutter:u10">
-      <div class="column:12 column@sm:6">
+    <div class="row row-gutter@sm:u10 margin-bottom:u12 margin-bottom@sm:u0">
+      <div class="column:12 column@sm:6 margin-bottom:u8 margin-bottom@sm:u0">
         <img src="https://via.placeholder.com/150/" class="media width:100%" />
       </div>
       <div class="column:12 column@sm:6 flex align-items:center">
-        <div class="max-width:500px margin:auto">
+        <div class="max-width@sm:500px margin:auto">
           <h4 class="margin-bottom:u6">Deploy your app in <br />seconds, get started now</h4>
           <p>Embed extensible, custom maps, location search, and turn by turn directions into your app, built on a network of over 420 million monthly users.</p>
           <a href="#" class="font-weight:bold">Read the docs</a>
@@ -81,9 +96,9 @@
       </div>
     </div>
 
-    <div class="row row-gutter:u10">
-      <div class="column:12 column@sm:6 flex align-items:center">
-        <div class="max-width:500px margin:auto">
+    <div class="row row-gutter@sm:u10 margin-bottom:u12 margin-bottom@sm:u0">
+      <div class="column:12 column@sm:6 flex align-items:center margin-bottom:u8 margin-bottom@sm:u0">
+        <div class="max-width@sm:500px margin:auto">
           <h4 class="margin-bottom:u6">Deploy your app in <br />seconds, get started now</h4>
           <p>Embed extensible, custom maps, location search, and turn by turn directions into your app, built on a network of over 420 million monthly users.</p>
           <a href="#" class="font-weight:bold">Read the docs</a>
@@ -94,12 +109,12 @@
       </div>
     </div>
 
-    <div class="row row-gutter:u10">
-      <div class="column:12 column@sm:6">
+    <div class="row row-gutter@sm:u10 margin-bottom:u12 margin-bottom@sm:u0">
+      <div class="column:12 column@sm:6 margin-bottom:u8 margin-bottom@sm:u0">
         <img src="https://via.placeholder.com/150/" class="media width:100%" />
       </div>
       <div class="column:12 column@sm:6 flex align-items:center">
-        <div class="max-width:500px margin:auto">
+        <div class="max-width@sm:500px margin:auto">
           <h4 class="margin-bottom:u6">Deploy your app in <br />seconds, get started now</h4>
           <p>Embed extensible, custom maps, location search, and turn by turn directions into your app, built on a network of over 420 million monthly users.</p>
           <a href="#" class="font-weight:bold">Read the docs</a>
@@ -111,138 +126,9 @@
   </div>
 </section>
 
-
-<section class="fill:navy padding-y:8vh align:center">
-  <div class="wrap">
-    <h2 class="margin-bottom:u8 color:white max-width:500px margin:auto">Deploy your app in seconds, get started now</h2>
-    <a href="#" class="button button-grow:u12 font-size:body border-radius:round">Get Started</a>
-  </div>
-</section>
-
-<footer class="fill:white padding-top:u10 padding-bottom:u6">
-  <div class="wrap">
-    <div class="row">
-      <div class="column flex:none padding-right:u12">
-        <img src="/assets/images/logo-ol.svg" class="media">
-      </div>
-      <div class="column">
-
-        <div class="row margin-bottom:u14">
-          <div class="column flex:none padding-right:u10">
-            <ul class="list list-gutter:u2">
-              <li class="list/item">
-                <h6 class="font-size:micro font-case:upper margin-bottom:u6">Product</h6>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Features
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Pricing
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Docs
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Support
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="column flex:none padding-right:u10">
-            <ul class="list list-gutter:u2">
-              <li class="list/item">
-                <h6 class="font-size:micro font-case:upper margin-bottom:u6">Tools & Support</h6>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Bulk Search
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Contact Us
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul class="list list-gutter:u2">
-              <li class="list/item">
-                <h6 class="font-size:micro font-case:upper margin-bottom:u6">Resources</h6>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Terms of Agreement
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Privacy Policy
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Country Flag
-                </a>
-              </li>
-              <li class="list/item">
-                <a href="#" class="color:black opacity:5 font-height:1.4 font-size:tiny hover-opacity:10">
-                  Map Image
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-      <div class="column flex:none">
-        <a href="#" class="card fill:blue-l5 border:none display:inline-flex">
-          <div class="card/content padding:u8">
-            <div class="flag flag-gutter:u6">
-              <div class="flag/item">
-                <img src="https://via.placeholder.com/150" class="media media-size:xl border-radius:round">
-              </div>
-              <div class="flag/item">
-                <h6 class="margin-bottom:u2">Try Our Bulk Search</h6>
-                <p class="color:black font-size:tiny">Built on a network of over 420 <br />million monthly users.</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="row border-top padding-top:u6">
-      <div class="column display:flex align-items:center">
-        <div>
-          <a href="#" class="font-size:tiny color:grey-l2 margin-right:u4">Copyright © IP Find 2018</a>
-          <a href="#" class="font-size:tiny color:grey-l2 margin-right:u4">Terms</a>
-          <a href="#" class="font-size:tiny color:grey-l2 ">Privacy</a>
-        </div>
-      </div>
-      <div class="column align:right">
-        <a href="#" class="font-size:h4 color:primary margin-right:u4"><i class="fab fa-github"></i></a>
-        <a href="#" class="font-size:h4 color:primary margin-right:u4"><i class="fab fa-medium"></i></a>
-        <a href="#" class="font-size:h4 color:primary "><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-
-
-  </div>
-</footer>
-
+{{ partial "cta" . }}
+{{ partial "footer" . }}
+{{ partial "slidemenu" . }}
 
 
 {{ partial "foot" . }}

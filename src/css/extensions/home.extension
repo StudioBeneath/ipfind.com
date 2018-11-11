@@ -7,16 +7,33 @@ HOME
   &\/elements {
     display: flex;
     position: absolute;
-    width: 8000px;
-    height: 4000px;
+    top: -1700px;
+    left: -1800px;
+    width: 4000px;
+    height: 2000px;
     overflow: hidden;
     z-index: 0;
-    left: -4300px;
-    top: -3000px;
-    // transform: rotate(-45deg) translateX(-20%) translateY(-10%);
     transform: rotate(-45deg);
     transform-origin: center center;
     z-index: 0;
+    @media (min-width: $sm) {
+      top: -3100px;
+      left: -4450px;
+      width: 8000px;
+      height: 4000px;
+    }
+    @media (min-width: $md) {
+      top: -3100px;
+      left: -4450px;
+      width: 8000px;
+      height: 4000px;
+    }
+    @media (min-width: $lg) {
+      top: -3000px;
+      left: -4300px;
+      width: 8000px;
+      height: 4000px;
+    }
   }
   &\/content {
     position: relative;
@@ -46,13 +63,16 @@ HOME
   }
   &\/globe {
     position: absolute;
-    width: 800px;
+    width: 760px;
     z-index: 1;
     left: calc(50% - 1450px);
     bottom: -260px;
     opacity: 0;
     animation: globe 1.5s forwards .25s;
     transform-origin: bottom left;
+    @media (min-width: $sm) {
+      width: 800px;
+    }
   }
 
 }
@@ -81,7 +101,10 @@ HOME
 
 .home-sdk {
   &\/cta {
-    transform: translateY(50%);
+
+    @media (min-width: $sm) {
+      transform: translateY(50%);
+    }
   }
 }
 
