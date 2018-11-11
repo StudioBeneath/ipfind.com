@@ -3,9 +3,22 @@
 <header>
   <div class="wrap">
     <nav class="header header:home">
-    	<div class="header/content">
+      <div class="header/content header/content:mobile display:flex display@sm:none">
     		<div class="header/item">
-          <a href="/" class="hover-fill:none padding-x:u4 padding-x@sm:u4 padding-y:u4">
+          <a href="/" class="hover-fill:none">
+      			<img src="/assets/images/logo-od.svg" class="header/logo">
+      		</a>
+        </div>
+        <div class="header/item">
+          <a href="#" class="header/hamburger padding-right:u2 js-hamburger">
+      			<i class="fas fa-bars font-size:h3 color:white"></i>
+      		</a>
+        </div>
+    	</div>
+
+    	<div class="header/content display:none display@sm:flex">
+    		<div class="header/item">
+          <a href="/" class="hover-fill:none">
       			<img src="/assets/images/logo-od.svg" class="header/logo">
       		</a>
         </div>
@@ -31,7 +44,7 @@
         </div>
     	</div>
 
-    	<div class="header/content">
+    	<div class="header/content display:none display@sm:flex">
     		<div class="header/item">
           <a href="/signup/" class="color:black font-weight:bold">
       			Sign Up
@@ -57,14 +70,16 @@
     </div>
     <div class="home-bg/content">
       <div class="row row-gutter:u10">
-        <div class="column:12 column@sm:7 padding-top:5vh">
-          <h1 class="font-size:hero font-height:1 margin-bottom:u8 color:white">The simplest <br />reverse lookup <br />for a location <br />using IP.</h1>
-          <h5 class="font-weight:regular color:white">
-            We make for fetching a location from an IP Address fast and simple. Fetch an end point with the IP and receive an instant JSON response with the location data you need.
-          </h5>
+        <div class="column:12 column@sm:6 column@md:7 margin-bottom:u8 flex align-items:center">
+          <div>
+            <h1 class="font-size:h2 font-size@sm:h1 font-size@md:hero font-height:1 margin-bottom:u8 color:white">The simplest <br class="display:none display@sm" />reverse lookup <br class="display:none display@sm" />for a location <br class="display:none display@sm" />using IP.</h1>
+            <h5 class="font-weight:regular color:white">
+              We make for fetching a location from an IP Address fast and simple. Fetch an end point with the IP and receive an instant JSON response with the location data you need.
+            </h5>
+          </div>
         </div>
-        <div class="column:12 column@sm:5">
-          <div class="card elevate">
+        <div class="column:12 column@sm:6 column@md:5">
+          <div class="card max-width:600px margin:auto elevate">
             <div class="card/content padding:u8 padding-bottom:u6">
               <h4 class="align:center margin-bottom:u8">Lookup IP addresses in <br>seconds, <span class="color:primary">get started now</span></h4>
               <form class="form">
@@ -386,6 +401,22 @@
   </div>
 </footer>
 
+
+
+<aside class="slidemenu slidemenu-direction:right">
+  <div class="slidemenu/overlay">
+
+  </div>
+  <div class="slidemenu/content padding:u4">
+    <div class="slidemenu/close">
+
+    </div>
+		<a href="/" class="hover-fill:none">
+      <img src="/assets/images/logo-ol.svg" class="slidemenu/logo">
+    </a>
+
+  </div>
+</aside>
 
 
 {{ partial "foot" . }}

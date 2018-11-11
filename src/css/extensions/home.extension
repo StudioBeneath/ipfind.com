@@ -21,7 +21,11 @@ HOME
   &\/content {
     position: relative;
     z-index: 1;
-    padding-top: 10vh;
+    margin-bottom: var(--u4);
+    padding-top: 6vh;
+    @media (min-width: $sm) {
+      padding-top: 10vh;
+    }
   }
 
   &\/blue-corner {

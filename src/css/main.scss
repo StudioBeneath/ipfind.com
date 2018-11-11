@@ -66,6 +66,30 @@ body {
   overflow-x: hidden;
 }
 
+.wrap {
+
+  position: relative;
+  width: 100%;
+  max-width: var(--wrap-width);
+  margin: auto;
+  padding-left: var(--u4);
+  padding-right: var(--u4);
+
+  @media (min-width: $sm) {
+    padding-left: var(--u10);
+    padding-right: var(--u10);
+  }
+  @media (min-width: $md) {
+    padding-left: var(--u12);
+    padding-right: var(--u12);
+  }
+  @media (min-width: $lg) {
+    padding-left: var(--u12);
+    padding-right: var(--u12);
+  }
+}
+
+
 .button {
   text-transform: none;
   &\:social {
@@ -106,25 +130,8 @@ body {
 }
 
 
-
-.markup {
-  &\:doc {
-    h3 {
-      position: relative;
-      margin-left: 30px;
-      @media (min-width: $sm) {
-        margin-left: 0;
-      }
-      &:before {
-        content: "#";
-        color: var(--green);
-        position: absolute;
-        left: -1em;
-        margin-top: 0em;
-        font-size: 1.2em;
-        line-height: 1;
-        font-weight: 700;
-      }
-    }
+.slidemenu {
+  &\/logo {
+    width: 90px;
   }
 }
