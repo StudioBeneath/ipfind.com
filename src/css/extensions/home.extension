@@ -7,10 +7,10 @@ HOME
   &\/elements {
     display: flex;
     position: absolute;
-    top: -1700px;
-    left: -1800px;
-    width: 4000px;
-    height: 2000px;
+    top: -1840px;
+    left: -1840px;
+    width: 4200px;
+    height: 2100px;
     overflow: hidden;
     z-index: 0;
     transform: rotate(-45deg);
@@ -23,8 +23,8 @@ HOME
       height: 4000px;
     }
     @media (min-width: $md) {
-      top: -3100px;
-      left: -4450px;
+      top: -3000px;
+      left: -4300px;
       width: 8000px;
       height: 4000px;
     }
