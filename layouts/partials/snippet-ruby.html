@@ -1,0 +1,10 @@
+```js
+  require 'open-uri'
+  require 'json'
+
+  request_uri = 'https://ipfind.co'
+  ip_address = '8.8.8.8'
+  url = "#{request_uri}?ip=#{ip_address}"
+  document = open(url).read
+  result = JSON.parse(document)
+```

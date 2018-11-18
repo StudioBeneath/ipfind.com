@@ -1,0 +1,8 @@
+```js
+  import urllib, json
+  ip_address = '8.8.8.8';
+  url = 'https://ipfind.co/?ip=' + ip_address;
+  response = urllib.urlopen(url)
+  data = json.loads(response.read())
+  print data
+```

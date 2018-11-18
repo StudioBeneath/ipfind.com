@@ -1,0 +1,9 @@
+```js
+  using (var webClient = new System.Net.WebClient()) {
+    string ip_address = "8.8.8.8";
+    string URL = "https://ipfind.co/?ip=" + ip_address;
+
+    var json = webClient.DownloadString(URL);
+    // Now parse with JSON.Net
+  }
+```

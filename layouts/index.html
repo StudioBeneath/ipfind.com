@@ -204,26 +204,30 @@
     <p class="max-width:700px font-size:h6 color:black margin:auto margin-bottom:u8 align:center">Access all the information you need to build on our API. Our API is predictable, resource-oriented URLs, and uses HTTP response codes to indicate API errors.</p>
 
     <div class="align:center margin-bottom:u10">
-      <a href="#" class="button button:tab js-home-language-switch is-active">PHP</a>
-      <a href="#" class="button button:tab js-home-language-switch">RUBY</a>
-      <a href="#" class="button button:tab js-home-language-switch">GO</a>
-      <a href="#" class="button button:tab js-home-language-switch">NODE</a>
+      <a class="button button:tab js-home-language-switch js-trigger-ruby is-active">RUBY</a>
+      <a class="button button:tab js-home-language-switch js-trigger-php">PHP</a>
+      <a class="button button:tab js-home-language-switch js-trigger-js">JS</a>
+      <a class="button button:tab js-home-language-switch js-trigger-cs">C#</a>
+      <a class="button button:tab js-home-language-switch js-trigger-python">PYTHON</a>
     </div>
 
     <div class="card elevate max-width:800px margin:auto margin-bottom:u10 margin-bottom@sm:u0">
       <div class="card/content padding:u8">
-        // Require the Stripe library with a test secret key.
-        const stripe = require('stripe')('sk_test_BQokikJOvBiI2HlWgH4olfQ2');
-
-        // Create a payment from a test card token.
-        const charge = await stripe.charges.create({
-          amount: 2000,
-          currency: 'usd',
-          source: 'tok_mastercard',
-          description: 'My first payment'
-        });
-
-        // Click “▶ run” to try this code live and create your first payment.
+        <div class="js-snippet js-snippet-ruby">
+          {{ partial "snippet-ruby" | markdownify }}
+        </div>
+        <div class="js-snippet js-snippet-php" style="display: none;">
+          {{ partial "snippet-php" | markdownify }}
+        </div>
+        <div class="js-snippet js-snippet-js" style="display: none;">
+          {{ partial "snippet-js" | markdownify }}
+        </div>
+        <div class="js-snippet js-snippet-cs" style="display: none;">
+          {{ partial "snippet-cs" | markdownify }}
+        </div>
+        <div class="js-snippet js-snippet-python" style="display: none;">
+          {{ partial "snippet-python" | markdownify }}
+        </div>
       </div>
     </div>
 
