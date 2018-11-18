@@ -7,7 +7,7 @@ PRICING
     content: '';
     display: block;
     position: absolute;
-    top: -1600px;
+    top: -1580px;
     width: 100%;
     height: 2000px;
     background: var(--blue-l5);
