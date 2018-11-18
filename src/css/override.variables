@@ -84,7 +84,7 @@ $colors: (
   grey: #5c789c,
 
   primary: #0050FF,
-  secondary: #ff5600,
+  secondary: #000C48,
   tertiary: #ffdd24
 ) !default;
 
