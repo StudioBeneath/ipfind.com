@@ -1,3 +1,6 @@
 baseURL= "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "The simplest reverse lookup for a location using IP."
+
+summaryLength = 24
+paginate = 15

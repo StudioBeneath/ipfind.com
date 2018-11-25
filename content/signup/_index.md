@@ -1,4 +1,4 @@
 +++
-title = "A clear and efficient CSS framework designed to enhance your design and development workflow."
+title = "Sign Up"
 body_class = "start"
 +++

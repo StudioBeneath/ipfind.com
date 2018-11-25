@@ -1,0 +1,39 @@
+{{ partial "head" . }}
+{{ partial "header-ol" . }}
+
+<section class="padding-y:10vh">
+  <div class="wrap distribute-y:u12">
+    {{ range .Pages }}
+      <article class="max-width:900px margin:auto">
+        <a href="{{ .URL }}">
+          <h2 class="margin-bottom:u6">
+            {{ .Title }}
+          </h2>
+        </a>
+        <div class="flag distribute-x:u4 margin-bottom:u6">
+          <div class="flag/item">
+            <img src="/assets/images/headshot-jordan-c.jpg" class="media media-size:sm border-radius:round" />
+          </div>
+          <div class="">
+            <h6 class="font-size:tiny font-weight:regular">Jordan Clist, CTO</h6>
+          </div>
+        </div>
+        <img src="{{ .Params.thumbnail }}" class="media width:100% margin-bottom:u6" />
+        <p>
+          {{ .Summary }}...
+        </p>
+        <a href="{{ .URL }}">Continue Reading</a>
+      </article>
+    {{ end }}
+
+
+  </div>
+</section>
+
+
+{{ partial "cta" . }}
+{{ partial "footer" . }}
+{{ partial "slidemenu" . }}
+
+
+{{ partial "foot" . }}

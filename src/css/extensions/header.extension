@@ -8,10 +8,7 @@ HEADER
   z-index: 10;
   &\:home {
     justify-content: space-between;
-    padding-top: var(--u5);
-    @media (min-width: $sm) {
-      padding-top: var(--u9);
-    }
+    height: 80px;
     .header\/content {
       display: flex;
       align-items: center;

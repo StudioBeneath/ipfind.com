@@ -1,85 +1,27 @@
 {{ partial "head" . }}
-
-<header>
-  <div class="wrap">
-    <nav class="header header:home">
-      <div class="header/content header/content:mobile display:flex display@sm:none">
-    		<div class="header/item">
-          <a href="/" class="hover-fill:none">
-      			<img src="/assets/images/logo-ol.svg" class="header/logo">
-      		</a>
-        </div>
-        <div class="header/item">
-          <a href="#" class="header/hamburger padding-right:u2 js-hamburger">
-      			<i class="fas fa-bars font-size:h3 color:primary"></i>
-      		</a>
-        </div>
-    	</div>
-
-    	<div class="header/content display:none display@sm:flex">
-    		<div class="header/item">
-          <a href="/" class="hover-fill:none">
-      			<img src="/assets/images/logo-ol.svg" class="header/logo">
-      		</a>
-        </div>
-        <div class="header/item">
-          <a href="/features/" class="color:black font-weight:bold">
-      			Features
-      		</a>
-        </div>
-        <div class="header/item">
-          <a href="/pricing/" class="color:black font-weight:bold">
-      			Pricing
-      		</a>
-        </div>
-        <div class="header/item">
-          <a href="#" class="color:black font-weight:bold">
-      			Docs
-      		</a>
-        </div>
-        <div class="header/item">
-          <a href="#" class="color:black font-weight:bold">
-      			Support
-      		</a>
-        </div>
-    	</div>
-
-    	<div class="header/content display:none display@sm:flex">
-    		<div class="header/item">
-          <a href="/signup/" class="color:black font-weight:bold">
-      			Sign Up
-      		</a>
-        </div>
-    		<div class="header/item">
-          <a href="/login/" class="button button-style:outline border-radius:round button-grow:u6 button-size:sm button-color:primary">
-      			Login
-      		</a>
-        </div>
-    	</div>
-    </nav>
-  </div>
-</header>
-
-
-<section class="margin-bottom:u12 pricing-bg padding-top:8vh">
-  <div class="wrap">
-    <div class="row row-gutter@sm:u10">
-        <div class="column:12 column@sm:7">
-          <h1 class="font-size:h2 font-height:1 margin-bottom:u8">A range of plans to suit your needs, transparent and simple.</h1>
-          <h5 class="font-weight:regular">
-            Always know what you'll pay with monthly caps and flat pricing across all global data centers. Simple, transparent pricing. Always know what you’ll pay.
-          </h5>
-        </div>
+{{ partial "header-ol" . }}
+<div class="fill:primary-l5">
+  <section class="padding-y:10vh">
+    <div class="wrap">
+      <div class="row row-gutter@sm:u10">
+          <div class="column:12 column@sm:8">
+            <h1 class="font-size:h2 font-height:1 margin-bottom:u8">A range of plans to suit your needs, transparent and simple.</h1>
+            <h5 class="font-weight:regular">
+              Always know what you'll pay with monthly caps and flat pricing across all global data centers. Simple, transparent pricing. Always know what you’ll pay.
+            </h5>
+          </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
+
 
 <section class="padding-bottom:10vh">
   <div class="wrap">
 
     <div class="row row-gutter@sm:u8 padding-y:10vh">
       <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
-        <img src="/assets/images/icons/icon-dev.svg/" class="media media-size:md margin-bottom:u6">
+        <img src="/assets/images/icons/icon-dev.svg/" class="media media-size:sm margin-bottom:u6">
         <h6 class="margin-bottom:u2">Developers</h6>
         <h2 class="margin-bottom:u6">Free</h2>
         <p class="font-size:tiny font-weight:bold color:black" style="line-height:2">
@@ -93,7 +35,7 @@
       </div>
 
       <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
-        <img src="/assets/images/icons/icon-basic.svg/" class="media media-size:md margin-bottom:u6">
+        <img src="/assets/images/icons/icon-basic.svg/" class="media media-size:sm margin-bottom:u6">
         <h6 class="margin-bottom:u2">Basic</h6>
         <h2 class="margin-bottom:u6">$10<span class="font-weight:regular font-size:h5">/month</span></h2>
         <p class="font-size:tiny font-weight:bold color:black" style="line-height:2">
@@ -107,7 +49,7 @@
       </div>
 
       <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
-        <img src="/assets/images/icons/icon-pro.svg/" class="media media-size:md margin-bottom:u6">
+        <img src="/assets/images/icons/icon-pro.svg/" class="media media-size:sm margin-bottom:u6">
         <h6 class="margin-bottom:u2">Professional</h6>
         <h2 class="margin-bottom:u6">$50<span class="font-weight:regular font-size:h5">/month</span></h2>
         <p class="font-size:tiny font-weight:bold color:black" style="line-height:2">
@@ -121,7 +63,7 @@
       </div>
 
       <div class="column:6 column@sm:3 margin-bottom:u10 margin-bottom@sm:u0">
-        <img src="/assets/images/icons/icon-enterprise.svg/" class="media media-size:md margin-bottom:u6">
+        <img src="/assets/images/icons/icon-enterprise.svg/" class="media media-size:sm margin-bottom:u6">
         <h6 class="margin-bottom:u2">Enterprise</h6>
         <h2 class="margin-bottom:u6">$150<span class="font-weight:regular font-size:h5">/month</span></h2>
         <p class="font-size:tiny font-weight:bold color:black" style="line-height:2">

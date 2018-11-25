@@ -1,0 +1,26 @@
+{{ partial "head" . }}
+{{ partial "header-ol" . }}
+
+<section class="padding-y:10vh">
+  <div class="wrap distribute-y:u12">
+    <article class="max-width:900px margin:auto">
+      <h2 class="margin-bottom:u6">
+        {{ .Title }}
+      </h2>
+      <img src="{{ .Params.thumbnail }}" class="media width:100% margin-bottom:u6" />
+      <div class="markup">
+        {{ .Content }}
+      </div>
+    </article>
+
+
+  </div>
+</section>
+
+
+{{ partial "cta" . }}
+{{ partial "footer" . }}
+{{ partial "slidemenu" . }}
+
+
+{{ partial "foot" . }}

@@ -1,0 +1,91 @@
+{{ partial "head" . }}
+{{ partial "header-ol" . }}
+
+<div class="fill:primary">
+  <section class="padding-y:10vh">
+    <div class="wrap">
+      <div class="row row-gutter@sm:u10">
+          <div class="column:12 column@sm:8">
+            <h1 class="font-size:h1 font-height:1 margin-bottom:u6 color:white">Bulk IP Check</h1>
+            <h5 class="font-weight:regular color:white">
+              Paste a list of IP addresses in the text box below to process them in bulk.
+            </h5>
+          </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<section class="padding-bottom:10vh">
+  <div class="wrap">
+
+    <div class="row row-gutter@sm:u8 padding-y:10vh">
+      <div class="column:12 column@sm:8 margin-bottom:u10 margin-bottom@sm:u0">
+
+        <div class="card elevate width:100% max-width:100% margin-bottom:u10">
+          <div class="card/content">
+            <form class="form">
+              <div class="form/item">
+                <textarea class="max-width:100% height:u17 align:top" required>1 IP Address per line, maximum of 300 per day</textarea>
+              </div>
+              <div class="form/item align:right">
+                <button type="submit" value="Sign Up" class="button button-grow:u8 font-size:body">Process</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <table class="table elevate width:100%">
+          <thead>
+            <tr>
+              <th>IP</th>
+              <th>Location</th>
+              <th>Timezone</th>
+              <th>Language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>111.111.111.111</td>
+              <td>New Zealand</td>
+              <td>NZDT</td>
+              <td>en-nz</td>
+            </tr>
+            <tr>
+              <td>111.111.111.111</td>
+              <td>New Zealand</td>
+              <td>NZDT</td>
+              <td>en-nz</td>
+            </tr>
+            <tr>
+              <td>111.111.111.111</td>
+              <td>New Zealand</td>
+              <td>NZDT</td>
+              <td>en-nz</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="column:12 column@sm:4">
+        <img src="/assets/images/icons/icon-globe.svg/" class="media media-size:sm margin-bottom:u6">
+        <h4 class="margin-bottom:u6">Need more than 300?</h4>
+        <p class="margin:auto margin-bottom:u6">Our database is the best in the business and is updated every week to make sure the results are as accurate as possible.</p>
+        <a href="/signup/" class="margin-bottom:u8 font-weight:bold">Sign Up for Free</a>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+
+{{ partial "cta" . }}
+{{ partial "footer" . }}
+{{ partial "slidemenu" . }}
+
+
+{{ partial "foot" . }}
